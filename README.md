@@ -20,8 +20,9 @@ composer update
 ```
 
 ## Quick Start
-```
+```php
 <?php
+
 require_once('vendors/autoload.php');
 
 $apiUrl = 'your_sketchy_api_url';
@@ -31,6 +32,7 @@ $sketchy = new Sketchy\URL($apiUrl, $apiToken);
 $response = $sketchy->capture('https://google.com');
 
 var_dump($response);
+
 ?>
 ```
 
@@ -61,7 +63,7 @@ array(10) {
 ```
 
 ### Retrieve Capture Result
-```
+```php
 <?php
 
 $sketchy = new Sketchy\URL(API_URL_SKETCHY, API_TOKEN_SKETCHY);
@@ -69,9 +71,12 @@ $sketchy = new Sketchy\URL(API_URL_SKETCHY, API_TOKEN_SKETCHY);
 $response = $sketchy->retrieveCapture(105);
 
 var_dump($response);
+
+?>
 ```
 
-* Note the token is automatically appended to returned URLs for static access.
+*Note the token is automatically appended to returned URLs for static access.*
+
 Sample output:
 ```
 array(12) {
