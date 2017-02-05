@@ -1,0 +1,27 @@
+{
+    "name": "demonslay335/sketchy-api",
+    "description": "Sketchy PHP Wrapper",
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["sketchy", "api", "php", "wrapper", "security"],
+    "homepage": "https://github.com/demonslay335/sketchy-api",
+    "authors": [
+        {
+            "name": "Michael Gillespie",
+            "email": "demonslay335@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sketchy": "src/"
+        }
+    },
+    "config": {
+        "vendor-dir" : "vendors",
+        "vendor-bin" : "vendors/bin"
+    }
+}
